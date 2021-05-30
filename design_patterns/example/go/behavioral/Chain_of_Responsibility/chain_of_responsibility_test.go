@@ -1,4 +1,4 @@
-package Chain_Of_Responsibility
+package Chain_of_Responsibility
 
 import (
 	"log"

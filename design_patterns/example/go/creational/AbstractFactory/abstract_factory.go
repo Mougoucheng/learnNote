@@ -1,4 +1,4 @@
-package Abstract_factory
+package AbstractFactory
 
 import "log"
 

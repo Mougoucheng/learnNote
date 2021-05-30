@@ -14,7 +14,7 @@
 ## 什么是设计模式
 
 "每一个模式描述了一个在我们周围不断重复发生的问题，以及该问题的解决方案的核心。这样，你就能一次又一次重复地使用该方案而不必做重复劳动"。
-<p align="right">--Christopher Alexander</p>
+<p align="right">——Christopher Alexander</p>
 
 ## GOF设计模式
 
@@ -374,7 +374,7 @@
 
 # GOF-23 模式分类
 
-![GOF-23模式分类](/Users/yaoxing.chen/My/myProject/learnNote/design_patterns/gof_23/gof_23.jpg)
+![GOF-23模式分类](./gof_23/images/gof_23.jpg)
 
 ## 1、从目的对模式分类
 
@@ -524,3 +524,8 @@
 3. **继承 -> 组合**
 4. **编译时依赖 -> 运行时依赖**
 5. **紧耦合 -> 松耦合**
+
+# 参考
+
+* [23个设计模式](https://www.bilibili.com/video/BV1kW411P7KS?p=9&spm_id_from=pageDriver)
+
