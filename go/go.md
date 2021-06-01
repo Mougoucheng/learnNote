@@ -8,7 +8,7 @@ type example struct {
     // Field appears in JSON as key "myName" and
     // the field is omitted from the object if its value is empty,
     // as defined above.
-    Field int `json:"myName,omitempty"` //Json翻译为:"myName或者零值省略"
+    Field int `json:"myName,omitempty"` //Json翻译为:"myName或者零值省略，指针类型字段且nil时，omitempty才生效"
     
     // Field appears in JSON as key "Field" (the default), but
     // the field is skipped if empty.
