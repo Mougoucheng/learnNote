@@ -1,0 +1,18 @@
+syntax="proto3";
+
+// 指定生成的文件的存放位置，且以最后一个作为包名，
+// protoc编译器如果不指定src路径，默认为当前路径。protoc -I=$SRC_DIR --go_out=$DST_DIR $SRC_DIR/addressbook.proto
+option go_package = "/services";
+
+message ProdRequest {
+  int32 prod_id = 1;
+}
+
+message ProdResponse {
+  int32 prod_stock = 1;
+}
+
+// 生成rpc服务端
+service ProdService {
+  rpc GetProdStock(ProdRequest) returns (ProdResponse);
+}
