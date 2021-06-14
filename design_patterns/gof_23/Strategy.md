@@ -29,7 +29,7 @@
 
 # 结构（Structure）
 
-![代码：template_bad ](./images/Strategy/strategy.png)
+![strategy ](./images/Strategy/strategy.png)
 
 # 要点总结
 

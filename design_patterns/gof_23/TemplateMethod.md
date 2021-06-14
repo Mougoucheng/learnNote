@@ -43,7 +43,7 @@
 
 # 结构（Structure）
 
-![代码：template_bad ](./images/Template_Method/structure.jpg)
+![template](./images/Template_Method/structure.jpg)
 
 # 要点总结
 
