@@ -28,7 +28,7 @@
 
 # 结构
 
-TODO
+![Decorator](./images/Decorator/structure.png)
 
 # 要点总结
 
