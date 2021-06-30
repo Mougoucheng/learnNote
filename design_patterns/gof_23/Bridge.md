@@ -11,14 +11,14 @@
 
 # 动机
 
-* 在某些情况下我们可能会“过度地使用继承来扩展对象的功能”，由于继承为类型引入的静态特质，使得这种扩展方式缺乏灵活性；并且随着子类的增多（扩展功能的增多），各种子类的组合（扩展功能的组合）会导致更多子类的膨胀。
-* 如何使“对象功能的扩展”能够根据需要来动态地实现？同时避免“扩展功能的增多”带来的子类膨胀问题？从而使得任何“功能扩展变化”所导致的影响降为最低？
+* 由于某些类型的固有的实现逻辑，使得它们具有两个变化的维度，乃至多个维度的变化。
+* 如何应对这种“多维度的变化”？如何利用面向对象技术来使得类型可以轻松地沿着两个乃至多个方向变化，而不引入额外的复杂度？
 
-[代码：Decorator_bad ](../example/go/structural/Decorator/bad/decorator_bad.go)
+[代码：Bridge_bad ](../example/go/structural/Bridge/bad/bridge_bad.go)
 
-[代码：Decorator_good ](../example/go/structural/Decorator/good/decorator_good.go)
+[代码：Bridge_good ](../example/go/structural/Bridge/good/bridge_good.go)
 
-[代码：Decorator_test ](../example/go/structural/Decorator/decorator_test.go)
+[代码：Bridge_test ](../example/go/structural/Bridge/bridge_test.go)
 
 # 模式定义
 
@@ -28,7 +28,7 @@
 
 # 结构
 
-![Decorator](D:\My\learnNote\design_patterns\gof_23\images\Decorator\structure.png)
+
 
 # 要点总结
 

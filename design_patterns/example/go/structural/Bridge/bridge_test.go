@@ -1,13 +1,15 @@
 package Bridge
 
-import "testing"
+import (
+	"chenyx/design_patterns/example/go/structural/Bridge/bad"
+	"log"
+	"testing"
+)
 
-func TestCircle_Draw(t *testing.T) {
-	red := Circle{}
-	red.Constructor(100, 200, 10, &RedCircle{})
-	red.Draw()
-
-	yellow := Circle{}
-	yellow.Constructor(200, 200, 20, &YellowCircle{})
-	yellow.Draw()
+func TestBridge(t *testing.T) {
+	// bad 编译时装配
+	messager := bad.MobileMessagerPerfect{
+		MobileBase: bad.MobileMessagerBase{},
+	}
+	log.Println(messager)
 }

@@ -46,9 +46,9 @@ tmpwatch
 
 2、ssh 原理？：
 
-​	cat ~/.ssh/config
+    	cat ~/.ssh/config
 
-​	cat ~/.ssh/authorized_keys
+    	cat ~/.ssh/authorized_keys
 
 3、技术栈：grpc / grpc-gateway / yaml / gorm / jwt Redis, mongodb
 
@@ -64,27 +64,27 @@ mongodb：aagregate - X ， map reduce - X（其他的增删改查，索引，�
 
 [pull]
 
-​	rebase = true
+    	rebase = true
 
 [merge]
 
-​	ff = false
+    	ff = false
 
 [push]
 
-​	default = simple
+    	default = simple
 
 [alias]
 
-​	st = status
+    	st = status
 
-​	ci = commit
+    	ci = commit
 
-​	co = checkout
+    	co = checkout
 
-​	br = branch
+    	br = branch
 
-​	sur = submodule update --recursive
+    	sur = submodule update --recursive
 
 
 
@@ -200,9 +200,9 @@ http,other探测请求，
 
 http跨域问题：
 
-​	w.Header().Set("Access-Control-Allow-Origin", "*")
+    	w.Header().Set("Access-Control-Allow-Origin", "*")
 
-​	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+    	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
 
 
@@ -218,7 +218,7 @@ struct中零值和空问题(结构体嵌套最好使用指针，这样指针为n
 
 依赖注入
 
-​			
+    			
 
 域名、
 
@@ -256,21 +256,21 @@ TODO：fakeRsp，不直接用json字符串，用结构体赋值再Marshal？？�
 
 常用工具：
 
-​	iTerm			终端
+    	iTerm			终端
 
-​	oh-my-zsh		
+    	oh-my-zsh		
 
-​	sublime         	打开大文件用
+    	sublime         	打开大文件用
 
-​	lastpass			chrome的插件
+    	lastpass			chrome的插件
 
-​	alfred			效率神器（替代spotlight）
+    	alfred			效率神器（替代spotlight）
 
-​	xcode			代码编辑器
+    	xcode			代码编辑器
 
-​	sourcetree		代码版本管理工具（由于sourcetree上做操作可能会出问题，主要是用来查看，各个操作还是用命令行）
+    	sourcetree		代码版本管理工具（由于sourcetree上做操作可能会出问题，主要是用来查看，各个操作还是用命令行）
 
-​	homebrew		包管理器（和apt-get、yum、wget之类的类似）
+    	homebrew		包管理器（和apt-get、yum、wget之类的类似）
 
 ---
 
@@ -290,7 +290,7 @@ go get配置私有库zenLog:
 
 [url "ssh://git@github.com/Zentertain/"]
 
-​    insteadOf = https://github.com/Zentertain/
+        insteadOf = https://github.com/Zentertain/
 
 用于解决go get流程中的第一步，即使用https访问https://github.com/Zentertain/时，会替换成使用ssh访问ssh://git@github.com/Zentertain/，就解决了GitHub上私有仓库不能访问的问题
 
@@ -312,11 +312,11 @@ GONOSUMDB="github.com/Zentertain"
 
 1、安装protoc-gen-go：brew install protocols-gen-go
 
-​	proto文件生成对应的go代码文件：protoc —go_out=$OUT_DIR $protoFile
+    	proto文件生成对应的go代码文件：protoc —go_out=$OUT_DIR $protoFile
 
 2、安装protoc-gen-go-grpc：brew install protocols-gen-go-grpc
 
-​	proto文件生成对应的grpc go代码文件：protoc —go-grpc_out=$OUT_DIR $protoFile
+    	proto文件生成对应的grpc go代码文件：protoc —go-grpc_out=$OUT_DIR $protoFile
 
 
 
@@ -358,13 +358,13 @@ TODO:不用在管testGovURL了，回头有空单独弄一个testCase，专门用
 
 e.g: func Ast2(notCare interface{}, err error) {
 
-​	 	if err != nil {
+    	 	if err != nil {
 
-​			panic(err)
+    			panic(err)
 
-​		}
+    		}
 
-​	}
+    	}
 
 )，
 
@@ -394,23 +394,23 @@ e.g: func Ast2(notCare interface{}, err error) {
 
 6、代码层级结构划分（有哪些？
 
-​	代码重构40种方法
+    	代码重构40种方法
 
-​	设计模式（动手写练习）
+    	设计模式（动手写练习）
 
 
 
-​	bootstrap				(干嘛用的？)
+    	bootstrap				(干嘛用的？)
 
-​	project-layout			(非标准)
+    	project-layout			(非标准)
 
-​	api test				(goconvey测试框架)
+    	api test				(goconvey测试框架)
 
-​	日志					(log.fmt？
+    	日志					(log.fmt？
 
-​	数据库
+    	数据库
 
-​	监控
+    	监控
 
 ---
 
